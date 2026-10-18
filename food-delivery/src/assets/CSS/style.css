@@ -1,0 +1,207 @@
+#main-layout
+{
+    background-image: url('../Images/wave.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.come-out
+{
+    opacity: 100%;
+    top: 100px;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    animation: out 0.5s ease;
+}
+@keyframes out
+{
+    0%
+    {
+        top: 50px;
+        opacity: 0;
+    }
+    100%
+    {
+        top: 100px;
+        opacity: 100%;
+    }
+}
+.go-in
+{
+    opacity: 100%;
+    top: 20px;
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.cookie
+{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    transform: translateX(200px);
+    opacity: 0;
+}
+
+.cookie-show
+{
+    animation: cout 1s ease-in-out forwards;
+}
+
+@keyframes cout
+{
+    from
+    {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    to
+    {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+}
+
+.loading-out
+{
+    animation: load-out 0.5s ease;
+}
+@keyframes load-out
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 100%;
+    }
+}
+
+.loading-in
+{
+    animation: load-in 0.5s ease;
+}
+@keyframes load-in
+{
+    0%
+    {
+        opacity: 100%;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
+
+/* Weekly Revenue Chart */
+.revenue-chart 
+{
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.revenue-chart svg 
+{
+  display: block;
+  max-width: 100%;
+}
+
+@keyframes dot {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.popup-down
+{
+    opacity: 100%;
+    top: 50%;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    animation: p-down 0.5s ease;
+}
+@keyframes p-down
+{
+    0%
+    {
+        top: 40%;
+        opacity: 0;
+    }
+    100%
+    {
+        top: 50%;
+        opacity: 100%;
+    }
+}
+.popup-up
+{
+    opacity: 0;
+    top: -50%;
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+@keyframes foodFadeIn {
+  from { opacity: 0; transform: scale(0.85); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.popup-in
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+    opacity: 0;
+    text-align: center;
+    padding: 20px;
+    transform: translateY(-50%) translateX(-50%) scale(0.4);
+}
+.popup-out
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    opacity: 100;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    transform: translateY(-50%) translateX(-50%) scale(1);
+    animation: p-out 0.4s ease;
+}
+
+@keyframes p-out
+{
+    0%
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: none;
+        transform: translateY(-50%) translateX(-50%) scale(0.4);
+    }
+    100%
+    {
+        opacity: 100%;
+        transform: translateY(-50%) translateX(-50%) scale(1);
+    }
+}
