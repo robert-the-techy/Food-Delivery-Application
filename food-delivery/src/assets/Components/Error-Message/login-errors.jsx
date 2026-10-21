@@ -1,4 +1,4 @@
-import '/Projects/AFOODDELIVERY/food-delivery/src/assets/CSS/style.css'
+import '../../CSS/style.css'
 
 function LoginErrors({isVisible,closeError,errorMsg})
 {

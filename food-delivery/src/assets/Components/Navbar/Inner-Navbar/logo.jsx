@@ -1,5 +1,5 @@
-import img from '/Projects/AFOODDELIVERY/food-delivery/src/assets/Images/logo.png'
-import img2 from '/Projects/AFOODDELIVERY/food-delivery/src/assets/Images/mealzo-logo.png'
+import img from '../../../Images/logo.png'
+import img2 from '../../../Images/mealzo-logo.png'
 
 function Logo()
 {
