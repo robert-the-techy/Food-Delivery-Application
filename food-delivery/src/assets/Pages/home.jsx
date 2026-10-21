@@ -5,6 +5,8 @@ import OTP from "../Components/All/Verify/otp";
 import Verification from "../Components/All/Verify/verification";
 import Forgotpassword from "../Components/All/forgotpassword";
 import {Routes,Route} from 'react-router-dom'
+import partner1 from "../Images/partner1.png";
+import partner2 from "../Images/partner2.png";
 
 function Home()
 {
@@ -21,8 +23,8 @@ function Home()
                 </Routes>
             </div>
 
-            <img src="/src/assets/Images/partner1.png" className={`absolute left-10 bottom-0 w-60 h-60`}/>
-            <img src="/src/assets/Images/partner2.png" className={`absolute right-10 bottom-0 w-40 h-40`}/>
+            <img src={partner1} className={`absolute left-10 bottom-0 w-60 h-60`}/>
+            <img src={partner2} className={`absolute right-10 bottom-0 w-40 h-40`}/>
         </div>
     )
 }
